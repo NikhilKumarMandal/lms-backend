@@ -16,7 +16,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 app.use(
   cors({
-    origin: ["https://lms-ui-gamma.vercel.app/"],
+    origin: ["https://lms-ui-gamma.vercel.app"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
