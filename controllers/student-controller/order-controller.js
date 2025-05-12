@@ -34,7 +34,7 @@ const createOrder = async (req, res) => {
     const formattedPrice = parseFloat(coursePricing).toFixed(2);
 
     // Safely use CLIENT_URL from env, fallback to localhost
-    const baseUrl = process.env.CLIENT_URL || "https://lms-ui-peach-two.vercel.app/auth";
+    const baseUrl = process.env.CLIENT_URL || "https://lms-ui-peach-two.vercel.app/student-courses";
 
     const create_payment_json = {
       intent: "sale",
